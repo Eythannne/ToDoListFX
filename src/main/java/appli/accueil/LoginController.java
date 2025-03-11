@@ -7,6 +7,7 @@ import appli.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -30,6 +31,9 @@ public class LoginController {
     private Button oubliemdp;
 
     @FXML
+    private Label erreur;
+
+    @FXML
     void boutonConnexion(ActionEvent event) {
         String emailtemp = "test@gmail.com";
         String mdptemp = "1234";
@@ -38,14 +42,13 @@ public class LoginController {
         mdp.getText();
 
         if (!emailtemp.equals(email.getText()) || !mdptemp.equals(mdp.getText())) {
-            System.out.println("email ou mot de passe incorrect");
+            erreur.setText("email ou mdp incorrect");
 
         }
         else {
-            System.out.println("Parfait");
+            erreur.setText(" ");
+            System.out.println("Connexion réussi");
         }
-        System.out.println(email.getText());
-        System.out.println(mdp.getText());
     }
 
     @FXML

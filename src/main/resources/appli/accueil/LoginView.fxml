@@ -25,7 +25,10 @@
    <TextField fx:id="email" alignment="CENTER" promptText="ethanpassard@gmail.com" />
    <Label text="votre mot de passe :" />
    <PasswordField fx:id="mdp" alignment="CENTER" promptText="12345678" />
-   <Label fx:id="erreur" text="Label" />
+   <Label fx:id="erreur" textFill="RED">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font></Label>
    <Button fx:id="connexion" onAction="#boutonConnexion" text="connexion" />
    <Button fx:id="oubliemdp" onAction="#boutonMdpOublie" text="mot de passe oublié" />
    <Button fx:id="inscription" mnemonicParsing="false" onAction="#boutonInscription" text="inscription" />
