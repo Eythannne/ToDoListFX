@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="674.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.InscriptionController">
+   <children>
+       <Label layoutX="168.0" layoutY="33.0" text="Bienvenue !">
+           <font>
+               <Font name="Arial Bold" size="25.0" />
+           </font>
+       </Label>
+      <Label layoutX="227.0" layoutY="125.0" text="nom">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email2" alignment="CENTER" layoutX="121.0" layoutY="164.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
+      <Label layoutX="219.0" layoutY="249.0" text="prénom">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email1" alignment="CENTER" layoutX="121.0" layoutY="294.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
+       <Label layoutX="207.0" layoutY="372.0" text="votre email :">
+           <font>
+               <Font name="Arial" size="12.0" />
+           </font>
+       </Label>
+       <TextField fx:id="email" alignment="CENTER" layoutX="121.0" layoutY="413.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
+       <Label layoutX="187.0" layoutY="485.0" text="votre mot de passe :" />
+       <PasswordField fx:id="mdp" alignment="CENTER" layoutX="121.0" layoutY="518.0" prefHeight="25.0" prefWidth="239.0" promptText="12345678" />
+       <Button fx:id="inscription" layoutX="205.0" layoutY="585.0" mnemonicParsing="false" onAction="#boutonInscription" prefHeight="25.0" prefWidth="71.0" text="inscription" />
+      <Button fx:id="connexion" layoutX="205.0" layoutY="626.0" mnemonicParsing="false" onAction="#boutonConnexion" text="connexion" />
+   </children>
+</Pane>
