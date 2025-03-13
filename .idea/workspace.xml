@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="953897be-87b0-48c5-a21b-7b9470a6b6b1" name="Changes" comment="init : initialisation du projet">
+    <list default="true" id="953897be-87b0-48c5-a21b-7b9470a6b6b1" name="Changes" comment="feat (modification) bouton erreur">
+      <change afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/accueil/InscriptionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/InscriptionView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/accueil/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/LoginView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,11 +53,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ethan/Downloads/mysql-connector-j-9.2.0.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
   }
@@ -86,7 +94,8 @@
       <workItem from="1741266623506" duration="820000" />
       <workItem from="1741267454877" duration="10808000" />
       <workItem from="1741678704663" duration="6901000" />
-      <workItem from="1741708770425" duration="1209000" />
+      <workItem from="1741708770425" duration="1543000" />
+      <workItem from="1741869875696" duration="7808000" />
     </task>
     <task id="LOCAL-00001" summary="init : initialisation du projet">
       <option name="closed" value="true" />
@@ -96,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741708958495</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat (modification) bouton erreur">
+      <option name="closed" value="true" />
+      <created>1741710200474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741710200477</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init : initialisation du projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="init : initialisation du projet" />
+    <MESSAGE value="feat (modification) bouton erreur" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (modification) bouton erreur" />
   </component>
 </project>

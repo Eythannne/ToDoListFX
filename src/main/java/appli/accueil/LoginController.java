@@ -35,8 +35,8 @@ public class LoginController {
 
     @FXML
     void boutonConnexion(ActionEvent event) {
-        String emailtemp = "test@gmail.com";
-        String mdptemp = "1234";
+        String emailtemp = "user@gmail.com";
+        String mdptemp = "user";
 
         email.getText();
         mdp.getText();

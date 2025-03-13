@@ -19,13 +19,13 @@
             <Font name="Arial" size="12.0" />
          </font>
       </Label>
-      <TextField fx:id="email2" alignment="CENTER" layoutX="121.0" layoutY="164.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
+      <TextField fx:id="nom" alignment="CENTER" layoutX="121.0" layoutY="164.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
       <Label layoutX="219.0" layoutY="249.0" text="prénom">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </Label>
-      <TextField fx:id="email1" alignment="CENTER" layoutX="121.0" layoutY="294.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
+      <TextField fx:id="prenom" alignment="CENTER" layoutX="121.0" layoutY="294.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
        <Label layoutX="207.0" layoutY="372.0" text="votre email :">
            <font>
                <Font name="Arial" size="12.0" />
@@ -34,7 +34,12 @@
        <TextField fx:id="email" alignment="CENTER" layoutX="121.0" layoutY="413.0" prefHeight="25.0" prefWidth="239.0" promptText="ethanpassard@gmail.com" />
        <Label layoutX="187.0" layoutY="485.0" text="votre mot de passe :" />
        <PasswordField fx:id="mdp" alignment="CENTER" layoutX="121.0" layoutY="518.0" prefHeight="25.0" prefWidth="239.0" promptText="12345678" />
-       <Button fx:id="inscription" layoutX="205.0" layoutY="585.0" mnemonicParsing="false" onAction="#boutonInscription" prefHeight="25.0" prefWidth="71.0" text="inscription" />
+       <Button fx:id="inscription" layoutX="200.0" layoutY="588.0" mnemonicParsing="false" onAction="#boutonInscription" prefHeight="25.0" prefWidth="82.0" text="inscription" />
       <Button fx:id="connexion" layoutX="205.0" layoutY="626.0" mnemonicParsing="false" onAction="#boutonConnexion" text="connexion" />
+      <Label fx:id="erreur" alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="553.0" prefHeight="15.0" prefWidth="41.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
