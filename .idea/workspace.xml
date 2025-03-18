@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="953897be-87b0-48c5-a21b-7b9470a6b6b1" name="Changes" comment="feat (modification) bouton erreur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Liste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Utilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UtilisateurRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/accueil/InscriptionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/InscriptionView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/accueil/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Database.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Application.StartApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -75,6 +75,26 @@
       <recent name="appli.todolistfx.accueil" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="database.Database" />
+      <module name="TodoListFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Database" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,6 +116,7 @@
       <workItem from="1741678704663" duration="6901000" />
       <workItem from="1741708770425" duration="1543000" />
       <workItem from="1741869875696" duration="7808000" />
+      <workItem from="1742283754831" duration="6675000" />
     </task>
     <task id="LOCAL-00001" summary="init : initialisation du projet">
       <option name="closed" value="true" />

@@ -4,12 +4,22 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 public class Database {
     private static final String SERVEUR = "localhost";
-    private static final String NOM_BDD = "nom_de_la_base";
+    private static final String NOM_BDD = "cours_todolist";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
     private static String getUrl() {
         return "jdbc:mysql://" + SERVEUR + "/" + NOM_BDD + "?serverTimezone=UTC";
     }
+
+    public static void main(String[] args) {
+        Connection cnx = getConnexion();
+        if (cnx != null) {
+            System.out.println("Connexion établie avec succès !");
+        } else {
+            System.out.println("Échec de la connexion à la base de données.");
+        }
+    }
+
     public static Connection getConnexion() {
         Connection cnx = null;
         try {
@@ -21,3 +31,4 @@ public class Database {
         return cnx;
     }
 }
+
