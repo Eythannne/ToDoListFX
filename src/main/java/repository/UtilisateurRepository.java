@@ -79,13 +79,28 @@ public class UtilisateurRepository {
         return utilisateurs;
     }
 
-    public void supprimerUtilisateurParEmail(String email) {
+    public boolean supprimerUtilisateurParEmail(String email) {
         String sql = "DELETE FROM utilisateur WHERE email = ?";
         try {
-            PreparedStatement rsql = connection.prepareStatement(sql);
-            rsql.setString(1, email);
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, email);
+            //int rowsDeleted = stmt.executeUpdate();
+            stmt.executeUpdate();
+            //debut verif
+            String verif = "SELECT * FROM utilisateur WHERE email = ?";
+            PreparedStatement stmtverif = connection.prepareStatement(verif);
+            stmtverif.setString(1, email);
+            ResultSet rs = stmtverif.executeQuery();
+            if (rs.next()) {
+                System.out.println("deso echoé : " + email);
+            }
+            else{
+                System.out.println("Utilisateur supprimé avec succès !");
+            }
+            return true;
         } catch (SQLException e) {
-            System.out.println("Erreur : " + e.getMessage());
+            System.out.println("Erreur lors de la suppression de l'utilisateur : " + e.getMessage());
+            return false;
         }
     }
 

@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.GestionUserController">
    <children>
-      <TableView fx:id="tableauUser" layoutX="42.0" layoutY="39.0" prefHeight="323.0" prefWidth="517.0" />
-      <Button fx:id="userSupp" disable="true" layoutX="266.0" layoutY="382.0" mnemonicParsing="false" text="supprimer" />
+      <TableView fx:id="tableauUser" layoutX="42.0" layoutY="39.0" onMouseClicked="#cliqueTableau" prefHeight="323.0" prefWidth="517.0" />
+      <Button fx:id="userSupp" disable="true" layoutX="266.0" layoutY="382.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
    </children>
 </AnchorPane>

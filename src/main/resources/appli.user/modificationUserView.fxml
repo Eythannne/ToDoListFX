@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.user.ModificationUserController">
+
+    <Label fx:id="nomModif" text="Votre Nom :" />
+    <TextField fx:id="nomTextModif" />
+    <Label fx:id="prenomModif" text="Votre Prénom" />
+    <TextField fx:id="prenomTextModif" />
+    <Label fx:id="emailModif" text="Votre Email :" />
+    <TextField fx:id="emailTextModif" />
+    <Button fx:id="modification" onAction="#cliqueTableau" text="Modification" />
+    <Label fx:id="erreurModif" textFill="RED" />
+</VBox>
