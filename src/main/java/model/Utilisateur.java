@@ -71,12 +71,13 @@ public class Utilisateur {
     }
 
 
-    public Utilisateur(int idUtilisateur, String nom, String prenom, String email, String mdp) {
+    public Utilisateur(int idUtilisateur, String nom, String prenom, String email, String mdp, String role) {
         this.idUtilisateur = idUtilisateur;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.mdp = mdp;
+        this.role = role;
     }
     public Utilisateur(String nom, String prenom, String email, String mdp) {
         this.nom = nom;

@@ -2,8 +2,11 @@ package repository;
 
 import com.mysql.cj.protocol.Resultset;
 import database.Database;
+import model.Liste;
 import model.Utilisateur;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UtilisateurRepository {
     private Connection connection;
@@ -40,12 +43,40 @@ public class UtilisateurRepository {
                         resultat.getString("nom"),
                         resultat.getString("prenom"),
                         resultat.getString("email"),
-                        resultat.getString("mot_de_passe"));
+                        resultat.getString("mot_de_passe"),
+                        resultat.getString("role")
+                );
+
             }
         } catch (SQLException e) {
                 System.out.println("Erreur : " + e.getMessage());
             }
         return null;
+    }
+
+    public ArrayList<Utilisateur> getAllUtilisateurs() {
+        ArrayList<Utilisateur> utilisateurs = new ArrayList<>();
+        String sql = "SELECT * FROM utilisateur";
+
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()){
+                Utilisateur utilisateur = new Utilisateur(
+                        rs.getInt("id_utilisateur"),
+                        rs.getString("nom"),
+                        rs.getString("prenom"),
+                        rs.getString("email"),
+                        rs.getString("mot_de_passe"),
+                        rs.getString("role")
+                );
+                utilisateurs.add(utilisateur);
+            }
+        } catch (SQLException e) {
+            System.out.println("Erreur : " + e.getMessage());
+        }
+        return utilisateurs;
     }
 
     public void supprimerUtilisateurParEmail(String email) {

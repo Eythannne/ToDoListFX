@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.AccueilController">
+   <children>
+      <Label fx:id="bjr" layoutX="74.0" layoutY="102.0" prefHeight="60.0" prefWidth="453.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="deconnexion" layoutX="199.0" layoutY="324.0" mnemonicParsing="false" onAction="#boutonDeconnexion" text="deconnexion" />
+      <Button fx:id="gu" layoutX="337.0" layoutY="324.0" mnemonicParsing="false" onAction="#boutonGestionUtilisateur" text="Gestion utilisateur" />
+   </children>
+</AnchorPane>
