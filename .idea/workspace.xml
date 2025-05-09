@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="953897be-87b0-48c5-a21b-7b9470a6b6b1" name="Changes" comment="fin de suppression mais bug pour modification">
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/MotDePasseOublieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/user/ModificationUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/user/TodoListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Tache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ListeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TacheRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/MdpOublieView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/user/TodoListView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/tache.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/StartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/AccueilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/AccueilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/GestionUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/GestionUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/InscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/accueil/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Liste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UtilisateurRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UtilisateurRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli.user/modificationUserView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/user/modificationUserView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/accueil/GestionUserView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/accueil/GestionUserView.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="953897be-87b0-48c5-a21b-7b9470a6b6b1" name="Changes" comment="fin de l'ajout et suppression de la todo list mais il manqque la modification" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,6 +162,7 @@
       <workItem from="1746738687143" duration="3686000" />
       <workItem from="1746742389720" duration="790000" />
       <workItem from="1746770488465" duration="72000" />
+      <workItem from="1746770577063" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="init : initialisation du projet">
       <option name="closed" value="true" />
@@ -229,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743714490506</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fin de l'ajout et suppression de la todo list mais il manqque la modification">
+      <option name="closed" value="true" />
+      <created>1746770633713</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746770633713</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +235,8 @@
     <MESSAGE value="feat (modification) fin tp 2 debut tp 3" />
     <MESSAGE value="fin table view il manque suppression et modification" />
     <MESSAGE value="fin de suppression mais bug pour modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin de suppression mais bug pour modification" />
+    <MESSAGE value="fin de l'ajout et suppression de la todo list mais il manqque la modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin de l'ajout et suppression de la todo list mais il manqque la modification" />
   </component>
   <component name="ai.zencoder.plugin.chat.state">
     <option name="activeChatId" value="6b64873e-059d-4a67-aa81-6465e3eb0665" />
