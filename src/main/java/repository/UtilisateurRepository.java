@@ -105,15 +105,17 @@ public class UtilisateurRepository {
     }
 
     public void mettreAJourUtilisateur(Utilisateur utilisateur) {
-        String sql = "UPDATE utilisateur SET nom = ?, prenom = ?, mdp = ?, role = ? WHERE email = ?";
+        System.out.println("MAJ : "+ utilisateur.getNom());
+        String sql = "UPDATE utilisateur SET nom = ?, prenom = ?, email = ? WHERE email = ?";
         try {
             PreparedStatement rsql = connection.prepareStatement(sql);
             rsql.setString(1, utilisateur.getNom());
             rsql.setString(2, utilisateur.getPrenom());
-            rsql.setString(3, utilisateur.getMdp());
-            rsql.setString(4, utilisateur.getRole());
+            rsql.setString(3, utilisateur.getEmail());
+            rsql.setString(4, utilisateur.getEmail());
             rsql.executeUpdate();
             System.out.println("l'utilisateur à bien été modifié !");
+
         } catch (SQLException e) {
             System.out.println("Erreur, les modifications n'ont pas été faites : " + e.getMessage());
         }

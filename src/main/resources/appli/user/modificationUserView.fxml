@@ -13,6 +13,6 @@
     <TextField fx:id="prenomTextModif" />
     <Label fx:id="emailModif" text="Votre Email :" />
     <TextField fx:id="emailTextModif" />
-    <Button fx:id="modification" onAction="#cliqueTableau" text="Modification" />
-    <Label fx:id="erreurModif" textFill="RED" />
+    <Button fx:id="modification" onAction="#modificationUser" text="Modification" />
+   <Button fx:id="retour" mnemonicParsing="false" onAction="#retour" text="retour" />
 </VBox>

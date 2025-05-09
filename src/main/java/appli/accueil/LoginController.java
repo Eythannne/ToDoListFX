@@ -18,19 +18,10 @@ public class LoginController {
     private UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
 
     @FXML
-    private Button connexion;
-
-    @FXML
     private TextField email;
 
     @FXML
-    private Button inscription;
-
-    @FXML
     private PasswordField mdp;
-
-    @FXML
-    private Button oubliemdp;
 
     @FXML
     private Label erreur;
@@ -66,14 +57,7 @@ public class LoginController {
     }
 
     @FXML
-    void boutonMdpOublie(ActionEvent event) {
-
-    }
-
-    @FXML
-    protected void handleLogout() {
-        SessionUtilisateur.getInstance().deconnecter();
-        System.out.println("Utilisateur déconnecté.");
-        // Redirection vers la page de connexion
+    void boutonMdpOublie() throws IOException {
+        StartApplication.changeScene("accueil/MdpOublie");
     }
 }

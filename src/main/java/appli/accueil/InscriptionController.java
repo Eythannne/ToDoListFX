@@ -38,9 +38,6 @@ public class InscriptionController {
     private PasswordField confirmationmdp;
 
     @FXML
-    private Button inscription;
-
-    @FXML
     private Label erreur;
 
 

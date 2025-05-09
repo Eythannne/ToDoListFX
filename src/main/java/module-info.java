@@ -5,9 +5,12 @@ module appli.todolistfx {
     requires mysql.connector.j;
     requires spring.security.crypto;
     requires java.desktop;
+    requires java.mail;
     opens appli to javafx.fxml;
     exports appli;
     exports appli.accueil;
+    exports appli.user;
     opens appli.accueil to javafx.fxml;
+    opens appli.user to javafx.fxml;
     opens model to javafx.base;
 }
